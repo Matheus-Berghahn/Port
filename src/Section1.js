@@ -1,40 +1,68 @@
-import produto from "./assets/images/produto.png"
-import shape from "./assets/images/shape.png"
-import shape2 from "./assets/images/shape2.png"
-import './Section1.scss';
+import { useState, useEffect } from "react";
+import img_eu from "./assets/images/eu.jpg";
+import "./Section1.scss";
 
 function Section1() {
+  const [firstName, setFirstName] = useState("Matheus");
+  const [lastName, setLastName] = useState("Berghahn");
+
+  useEffect(() => {
+    const anima_nome = document.querySelector(".anima_nome");
+    const strText = anima_nome.getAttribute("data-text");
+    const splitText = strText.split("");
+
+    anima_nome.textContent = "";
+
+    for (let i = 0; i < splitText.length; i++) {
+      if (i === firstName.length) {
+        anima_nome.innerHTML += "&nbsp;";
+      }
+      anima_nome.innerHTML += `<span data-text="${strText}">${splitText[i]}</span>`;
+    }
+
+    let char = 0;
+    let timer = setInterval(onTick, 70);
+
+    function onTick() {
+      const spans = anima_nome.querySelectorAll('span[data-text="' + strText + '"]');
+      const span = spans[char];
+      if (span) {
+        span.classList.add("fade");
+        char++;
+        if (char === splitText.length) {
+          complete();
+          return;
+        }
+      }
+    }
+
+    function complete() {
+      clearInterval(timer);
+      timer = null;
+    }
+  }, [firstName, lastName]);
 
   return (
     <div className="section1 max-width">
+      <div className="s1_left">
+        <h2 className="anima_nome" data-text={`${firstName} ${lastName}`}>
+          {firstName}&nbsp;{lastName}
+        </h2>
+        <p className="anima_p1">Desenvolvedor Front-end </p>
+       
 
-    <div className="contentOne_leftSide">
-      <h1><b>FisioFort:</b> a solução eficaz para aliviar dores musculares</h1>
-      <p>A pomada muscular é a solução perfeita para aliviar a dor e a tensão nos músculos e articulações. Com uma fórmula potente e eficaz, ela penetra profundamente na pele para aliviar a dor e a inflamação, deixando seus músculos e articulações se sentindo relaxados e rejuvenescidos. Além disso, a pomada é fácil de usar e pode ser aplicada diretamente na área afetada, sem sujar as suas mãos. Experimente hoje e sinta a diferença em seus músculos e articulações. Adquira já a sua pomada muscular!
-      </p>
-
-      <div className='contentOne_middle'>
-          <a href='/checkout' className='contentOne_btn contentOne_btn1'>Compre Agora</a>
+        <div className="buttons">
+          <button className="btn1" >GitHub</button>
+          <button className="btn2">Instagram</button>
         </div>
-    </div>
-
-    <div className="contentOne_rightSide">
-      <img className="produto" src={produto} alt="produto"/>
-      <div className="contentOne_shape ">
-        <img className="shape_in" src={shape} alt="shape"/>
       </div>
-      <div className="contentOne_shape2 ">
-        <img className="shape2_in" src={shape2} alt="shape2"/>
+
+      <div className="s1_right">
+        <div className="shape_img"></div>
+        <img className="img_eu" src={img_eu} alt="Minha foto" />
       </div>
     </div>
-
-
-    
-  </div>
   );
 }
 
 export default Section1;
-
-
-

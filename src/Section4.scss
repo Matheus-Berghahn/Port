@@ -1,12 +1,79 @@
 .section4{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0;
-  background: #070606;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vh 0;
+    background-color: #121212;
+    gap: 30px;
 
-  iframe{
-    padding: 0 2%;
+    h2{
+      font-size: 55px;
+      color: #ffa500;
+    }
+
+
+    .all_box {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      width: 100%;
+
+      .align_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
+    iframe {
+      max-width: 300px;
+      border: none;
+      box-shadow: 5px 5px 3px #00000062;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+    
+    .box {
+      width: 300px;
+      height: 250px;
+    }
+    
+    .box2 {
+      width: 300px;
+      height: 600px;
+    }
+    
+    .anima1 {
+      grid-column: 1 / span 1;
+      grid-row: 1;
+      justify-self: center; 
+    }
+    .anima2 {
+      grid-column: 2 / span 1;
+      grid-row: 1;
+      justify-self: center; 
+    }
+    .anima3 {
+      grid-column: 2 / span 1;
+      grid-row: 1;
+      justify-self: center; 
+    }
+    .anima4 {
+      grid-column: 3 / span 1;
+      grid-row: 1;
+      justify-self: center; 
+    }
+    .anima5 {
+      grid-column: 3 / span 1;
+      grid-row: 1;
+      justify-self: center; 
+    }
+    .anima6 {
+      grid-column: 4 / span 1;
+      grid-row: 1;
+      justify-self: center; 
+    }
+    
+
   }
-
-}
+  

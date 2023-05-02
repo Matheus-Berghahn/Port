@@ -1,36 +1,23 @@
-import React from "react";
-import './Section2.scss';
-import {Parallax} from "react-parallax"
-import shape2 from "./assets/images/parallax.png"
 
-
+import img_eu from "./assets/images/eu2.jpg";
+import "./Section2.scss";
 
 function Section2() {
 
-  const scrollToClasseDeDestino = () => {
-    const classeDeDestino = document.getElementById("ancor_shapes");
-    window.scrollTo({
-      top: classeDeDestino.offsetTop,
-      behavior: "smooth"
-    });
-  }
-
   return (
-    <div className="section2">
-      <Parallax  className="bg_parallax" bgImage={ shape2 } strength={500}>
-        <div className="txt_parallax">
-          <h2>Quer conhecer mais sobre a pomada FisioFort?</h2>
-
-        </div>
-        <div className='contentTree_middle'>
-          <button  onClick={scrollToClasseDeDestino} className='contentTree_btn contentTree_btn1'>Vamos lá</button>
-        </div>
-      </Parallax>
+    <div className="section2 max-width">
+      <div className="s2_left">
+      <div className="shape_img"></div>
+        <img className="img_eu" src={img_eu} alt="Minha foto" />
+      </div>
+      <div className="s2_right">
+        <h2>Sobre</h2>
+        <p>Rápido entendimento, facilidade e vontade em aprender novas funções, noção e experiência na área de TI, dedicação para entregar a melhor versão possível e facilidade em esclarecer e dar feedbacks sobre projetos.Rápido entendimento, facilidade e vontade em aprender novas funções, noção e experiência na área de TI, dedicação para entregar a melhor versão possível e facilidade em esclarecer e dar feedbacks sobre projetos.Rápido entendimento, facilidade e vontade em aprender novas funções, noção e experiência na área de TI, dedicação para entregar a melhor versão possível e facilidade em esclarecer e dar feedbacks sobre projetos.</p>
+      </div>
+      
+   
     </div>
   );
 }
 
 export default Section2;
-
-
-

@@ -1,30 +1,26 @@
 import './App.scss';
-import './Header.scss';
-import ContentMain from './ContentMain';
-import Checkout from './Checkout';
-
-const { pathname } = window.location;
 
 
-  let Component;
+import Section1 from './Section1';
+import Section2 from './Section2';
+import Section3 from './Section3';
+import Section4 from './Section4';
 
-  if (pathname === '/checkout') {
-    Component = Checkout;
-  }else {
-    Component = ContentMain;
-  }
 
-const App = () => {
+
+function ContentMain() {
 
   return (
-    <div>
-      <div className='content'>
-        <div className='app'>
-          <Component/>
-        </div>
-      </div>
+    <>
+    <div className='contentMain'> 
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+  
     </div>
+    </>
   );
-};
+}
 
-export default App;
+export default ContentMain;

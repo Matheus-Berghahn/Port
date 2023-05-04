@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to top right, #ffba3b, #ffa500);
+  background-image: linear-gradient(to top right, #5b8657, #41613e);
   border-radius: 80px ;
   box-shadow: 10px 10px 22px black;
   
@@ -32,9 +32,9 @@ p{
   text-align: justify;
 }
 //Section1
-.content{
+.contentMain{
   width: 100%;
-  background-color: #070606;
+  position: relative;
 
 }
 

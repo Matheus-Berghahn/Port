@@ -3,7 +3,7 @@ import "./Section4.scss";
 
 function Section4() {
   return (
-    <div className="section4 max-width">
+    <div id="ancor_anima" className="section4 max-width">
       <h2>Animações</h2>
       <div className="all_box">
         <div className="align_box"><iframe className="box2 anima1" src={`${process.env.PUBLIC_URL}/anima_bradesco.html`} title="bradesco"></iframe>  </div>

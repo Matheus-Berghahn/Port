@@ -7,12 +7,16 @@ import "./Section3.scss";
 function Section3() {
 
   return (
-    <div className="section3 max-width">
-      <h2>Projetos</h2>
+    <div id="ancor_proj" className="section3 max-width">
+      <h2 >Projetos</h2>
       <div className="all_box">
-          <a href="https://luvas-berghahn.netlify.app/" target="_blank"><img src={img_lb} alt="LuvasBerghahn"></img></a>
-          <a href="https://luvas-berghahn.netlify.app/" target="_blank"><img src={img_db} alt="DigitalBusiness"></img></a>
-          <a href="" target="_blank"><img src={img_ex} alt="Exemplo"></img></a>
+            <div className="card lb"></div>
+            <div className="card db"></div>
+            <div className="card ex"></div>
+            <div className="card sl"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+         
       </div>
 
     </div>

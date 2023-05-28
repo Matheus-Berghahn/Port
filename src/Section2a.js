@@ -21,7 +21,7 @@ function Section2a() {
   };
   return (
     <div className="section2a max-width">
-      <ReactWaypoint onEnter={handleWaypointEnter} bottomOffset="63%" />
+      <ReactWaypoint onEnter={handleWaypointEnter} bottomOffset="50%" />
 
       <div className="s2_bottom">
         <div className="shape_img"></div>

@@ -151,39 +151,39 @@
 
   //---animação dos cards -- entrada
 
-  .lb.anima-cards{
+  .sl.anima-cards{
     transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
     transition: 800ms;
     transition-delay: 100ms;
     transform: translateX(0px);
   }
-  .lb.not-anima-cards{
+  .sl.not-anima-cards{
     transition-timing-function:ease-in;
     transition: 500ms;
     transition-delay: 500ms;
     transform: translateX(-300px) !important;
     
   }
-  .db.anima-cards{
+  .lb.anima-cards{
     transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
     transition: 800ms;
     transition-delay: 200ms;
     transform: translateX(0px);
   }
-  .db.not-anima-cards{
+  .lb.not-anima-cards{
     transition-timing-function:ease-in;
     transition: 500ms;
     transition-delay: 400ms;
     transform: translateX(-230px) !important;
     
   }
-  .sl.anima-cards{
+  .db.anima-cards{
     transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
     transition: 800ms;
     transition-delay: 300ms;
     transform: translateX(0px);
   }
-  .sl.not-anima-cards{
+  .db.not-anima-cards{
     transition-timing-function:ease-in;
     transition: 500ms;
     transition-delay: 300ms;
@@ -305,21 +305,60 @@
     h2::before {
       content: "";
       right: 0px !important;
-      top: 14%;
+      top: 12%;
       height: 1px;
       width: 0% !important;
     }
 
     h3::before {
       content: "";
-      top: 14%;
+      top: 12%;
       width: 0%;
       }
     }
 
+    .all_box{
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap !important;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 5 !important;
+      gap: 10px;
+
+    }
+
+    a{
+      transform: perspective(1000px) rotateY(0deg) !important;
+      position: relative;
+      left: 0;
+      transition: 1s;
+      margin-left: 0px !important;
+    }
+
+    a:not(:first-child) {
+      margin-left: 0px !important;
+    }
+    a:not(:first-child) {
+      margin-left: 0px !important;
+    }
+    
+    a:hover {
+      transform: translateY(0px) !important;
+      transition: 200ms;
+      transition-timing-function: ease-in;
+      transform: scale(1.02) !important;
+    }
+    
+    a:hover ~ a {
+      left: 0px !important;
+    }
+
+
     .card {
-      width: 140px !important;
-      height: 200px !important;
+      width: 120px !important;
+      height: 160px !important;
     }
     
     .s3_left.anima-line h2::before{
@@ -330,8 +369,7 @@
       width: 29%;
       transition: 1s;
     }
-  
-  
+
     .s3_left.not-anima-line h2::before{
       width: 0% !important;
       transition: 1s;
@@ -344,17 +382,30 @@
 
      //---animação dos cards -- entrada
 
+  .sl.anima-cards{
+    transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
+    transition: 800ms;
+    transition-delay: 200ms;
+    transform: translateX(0px);
+  }
+  .sl.not-anima-cards{
+    transition-timing-function:ease-in;
+    transition: 500ms;
+    transition-delay: 200ms;
+    transform: translateX(-15px) translateY(-15px) scale(0.8) !important;
+    
+  }
   .lb.anima-cards{
     transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
     transition: 800ms;
-    transition-delay: 100ms;
+    transition-delay: 200ms;
     transform: translateX(0px);
   }
   .lb.not-anima-cards{
     transition-timing-function:ease-in;
     transition: 500ms;
-    transition-delay: 500ms;
-    transform: translateX(-110px) !important;
+    transition-delay: 200ms;
+    transform: translateX(15px) translateY(-15px) scale(0.8) !important;
     
   }
   .db.anima-cards{
@@ -366,49 +417,23 @@
   .db.not-anima-cards{
     transition-timing-function:ease-in;
     transition: 500ms;
-    transition-delay: 400ms;
-    transform: translateX(-90px) !important;
-    
-  }
-  .sl.anima-cards{
-    transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
-    transition: 800ms;
-    transition-delay: 300ms;
-    transform: translateX(0px);
-  }
-  .sl.not-anima-cards{
-    transition-timing-function:ease-in;
-    transition: 500ms;
-    transition-delay: 300ms;
-    transform: translateX(-70px) !important;
-    
+    transition-delay: 200ms;
+    transform: translateX(-15px) translateY(15px) scale(0.8)  !important;
   }
   .pr.anima-cards{
     transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
     transition: 800ms;
-    transition-delay: 400ms;
+    transition-delay: 200ms;
     transform: translateX(0px);
   }
   .pr.not-anima-cards{
     transition-timing-function:ease-in;
     transition: 500ms;
     transition-delay: 200ms;
-    transform: translateX(-50px) !important;
+    transform: translateX(15px) translateY(15px) scale(0.8) !important;
     
   }
-  .ex.anima-cards{
-    transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
-    transition: 800ms;
-    transition-delay: 500ms;
-    transform: translateX(0px);
-  }
-  .ex.not-anima-cards{
-    transition-timing-function:ease-in;
-    transition: 500ms;
-    transition-delay: 100ms;
-    transform: translateX(-20px) !important;
-    
-  }
+
 
   .s3_right{
     width: 100% !important; 
@@ -446,12 +471,7 @@
 
 @media only screen and (max-width: 425px) {
   .section3{
-  .card {
-    width: 120px !important;
-    height: 200px !important;
-  }
 
-  
   .s3_flex{
     button{
       margin: 0 3px;

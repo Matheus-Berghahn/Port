@@ -27,14 +27,11 @@ function Section3() {
         <h2>PROJETOS</h2>
         <h3>Clique nos cards para acessar as páginas</h3>
         <div className="all_box">
-          <a href="">
+          {/*<a href="">
             <div className={`card ex ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
-          </a>
+          </a>*/}
           <a href="https://pucrio.netlify.app/" target="_blank" rel="noopener noreferrer">
             <div className={`card pr ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
-          </a>
-          <a href="https://sevenletters.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <div className={`card sl ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
           </a>
           <a href="https://digitalbusiness-seo.netlify.app/" target="_blank" rel="noopener noreferrer">
             <div className={`card db ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
@@ -42,14 +39,23 @@ function Section3() {
           <a href="https://luvasberghahn.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div className={`card lb ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
           </a>
+          <a href="https://sevenletters.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <div className={`card sl ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
+          </a>
         </div>
       </div>
 
       <div className="s3_right">
         <div className="s3_flex">
-          <button
+        <button
             className={selectedIframe === 0 ? "selected" : ""}
             onClick={() => handleButtonClick(0)}
+          >
+            Seven Letters
+          </button>
+          <button
+            className={selectedIframe === 2 ? "selected" : ""}
+            onClick={() => handleButtonClick(2)}
           >
             Luvas Berghahn
           </button>
@@ -59,12 +65,7 @@ function Section3() {
           >
             Digital Business
           </button>
-          <button
-            className={selectedIframe === 2 ? "selected" : ""}
-            onClick={() => handleButtonClick(2)}
-          >
-            Seven Letters
-          </button>
+          
           <button
             className={selectedIframe === 3 ? "selected" : ""}
             onClick={() => handleButtonClick(3)}
@@ -73,11 +74,6 @@ function Section3() {
           </button>
         </div>
         <div className="box">
-          <iframe
-            className="iframe_pr"
-            src="https://sevenletters.vercel.app/"
-            style={{ display: selectedIframe === 2 ? "block" : "none" }}
-          ></iframe>
           <iframe
             className="iframe_pr"
             src="https://pucrio.netlify.app/"
@@ -91,6 +87,11 @@ function Section3() {
           <iframe
             className="iframe_lb"
             src="https://luvasberghahn.vercel.app/"
+            style={{ display: selectedIframe === 2 ? "block" : "none" }}
+          ></iframe>
+          <iframe
+            className="iframe_pr"
+            src="https://sevenletters.vercel.app/"
             style={{ display: selectedIframe === 0 ? "block" : "none" }}
           ></iframe>
         </div>

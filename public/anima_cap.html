@@ -23,6 +23,27 @@
 			void(0);
 		}, false);
 	</script>
-	
+	<script>
+		var divs = document.querySelectorAll('#banner div,#banner video')
+
+		function resetAnimation() {
+		  for (var i = 0; i < divs.length; i++) {
+			var className = divs[i].className
+			divs[i].className = ''
+			void divs[i].offsetWidth
+			divs[i].className = className
+
+			if (divs[i].tagName === 'VIDEO') {
+			  divs[i].currentTime = 0
+			  if (window['play' + divs[i].className]) {
+				window['play' + divs[i].className]()
+			  } else {
+				divs[i].play()
+			  }
+			}
+		  }
+		}
+		  setInterval(resetAnimation, 18000)
+        </script>
 </body>
 </html>

@@ -1,0 +1,204 @@
+.section2a {
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 0;
+  background-color: #121212;
+
+  .s2_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+    .shape_img {
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      border-top:1px solid #ffffff ;
+      box-shadow: 3px 5px 8px black;
+      background-image: radial-gradient(circle,  rgb(26, 26, 26), rgb(14, 14, 14));
+			backdrop-filter: blur(10px);
+      z-index: 1;
+    }
+    .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .flip-card{
+      background-color: transparent;
+      padding: 0 10px;
+      width: 270px;
+      height: 400px;
+      perspective: 1000px;
+      z-index: 2;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      transform: rotateY(0deg);
+    }
+    
+    .flip-card:hover .flip-card-inner{
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 2px 5px 10px black;
+    }
+    
+    .flip-card-front{
+      background-image: linear-gradient(120deg, rgb(37, 37, 37), rgb(0, 0, 0));
+      border: 2px solid #313131;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      
+      h2{
+        color: white;
+        font-weight: 300;
+        font-size: 40px;
+        letter-spacing: 2px;
+      }
+    }
+    
+    .flip-card-back{
+      background-image: linear-gradient(120deg,  rgb(22, 22, 22), rgb(14, 14, 14));
+      border: 3px solid #ffffff;
+      transform: rotateY(180deg);
+      transition: transform 0.6s;
+      display: flex;
+      flex-direction: column;
+      transition-delay: 1s;
+    }
+
+    .flip-card-back h2{
+      color: #ffffff;
+      padding: 10% 0;
+      font-weight: 300;
+    }
+    .flip-card-back p{
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      font-weight: 300;
+      text-align: left;
+      color: #c5c5c5;
+    }
+
+    .front1{
+      transform: rotateY(0deg);
+  
+    }
+    .front2{
+      transform: scale(1);
+    }
+    .front3{
+      transform: rotateY(0deg);
+    }
+
+    .anima-card1{
+      transition: 1000ms;
+      transform: rotateY(15deg) ;
+    
+    }
+    .anima-card2{
+      transition: 1000ms;
+      transform: scale(0.95);
+    }
+    .anima-card3{
+      transition: 1000ms;
+      transform: rotateY(-15deg);
+    }
+    
+    h2{
+      font-size: 26px;
+      letter-spacing: 2px;
+    }
+    p{
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px ;
+      padding: 0 20px;
+      line-height: 1.5em;
+      font-weight: 300;
+      letter-spacing: normal;
+      
+    }
+    .bold{
+      font-size: 12px ;
+      letter-spacing: 2px;
+    }
+    .icon{
+      font-size: 50px;
+      color: #ffffff;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .shape_img {
+    height: 1050px !important;
+  }
+
+  .flex{
+    flex-direction: column;
+    gap: 40px !important;
+  }
+  .flip-card{
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .flip-card-back h2{
+    font-size: 30px !important;
+  }
+  .flip-card-back p{
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+
+  .front1{
+    transform: translateX(-500px) !important;
+
+  }
+  .front2{
+    transform: translateX(500px) !important;
+  }
+  .front3{
+    transform: translateX(-500px) !important;
+  }
+
+  .anima-card1{
+    transition: 1000ms;
+    transition-delay: 0ms !important;
+    transform: translateX(0px) !important;
+  
+  }
+  .anima-card2{
+    transition: 1000ms;
+    transition-delay: 300ms !important;
+    transform: translateX(0px) !important;
+  }
+  .anima-card3{
+    transition: 1000ms;
+    transition-delay: 600ms !important;
+    transform: translateX(0px) !important ;
+  }
+}

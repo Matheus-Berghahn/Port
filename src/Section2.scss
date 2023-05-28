@@ -1,226 +1,217 @@
-.section2{
+.section2 {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10vh;
+  padding: 5vh 0;
+  padding-top: 0;
   background-color: #121212;
-  gap: 150px;
 
-
-  .s2_top{
+  .s2_top {
     display: flex;
 
-    .left{
-      width: 50%;
+    .left {
+      width: 55%;
       margin-left: 15%;
-      padding: 2%;
+      padding: 3%;
       display: flex;
       flex-direction: column;
-      border-radius: 24px;
-      box-shadow: 7px 7px 5px black;
-      border: 5px groove #5b8657;
-      background-color: rgb(14, 14, 14);
-      animation: sobre 20s linear 0s infinite;
+      position: relative;
+      gap: 20px;
+
+      h2 {
+        font-size: 50px;
+        font-weight: 300;
+        position: relative;
+      }
+
+      p {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: rgb(97, 97, 97);
+      }
     }
-    .left:hover{
-      transform: rotateY(70deg) !important;
-      transition: 1s;
-    }
-     .right{
-      width: 50%;
+
+    .right {
+      width: 45%;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .shape_img {
-        background-color: rgb(14, 14, 14);
-        width: 300px;
-        height: 200px;
-        border-radius: 24px;
-        box-shadow: 3px 5px 5px black;
-        border: 5px groove #5b8657;
         z-index: 1;
-        animation: flutuar_shape 20s linear -5s infinite;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        button{
-        background-color: rgb(14, 14, 14);
-        border: 2px groove #5b8657;
-        border-radius: 24px;
-        width: 200px;
-        margin: 10px 0;
-        padding: 10px;
-        color: #5b8657;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        
-        transform: perspective(1000px) rotateY(-10deg);
+        .btn1, .btn2 {
+          background-color: #121212;
+          border: 1px groove #ffffff;
+          width: 200px;
+          margin: 10px 0;
+          padding: 20px;
+          color: rgb(221, 221, 221);
+          font-size: 24px;
+          letter-spacing: 2px;
+          transition: 100ms;
+          cursor: pointer;
+
         }
 
-        button:hover{
-          border: 2px solid #5b8657;
-          background-color: #5b8657;
-          color: #121212;
-          transition: 300ms;
+        .btn1{
+          transform: translateX(30px);
+          
         }
-        button:not(:hover){
-          background-color: rgb(14, 14, 14);
-          color: #5b8657;
-          transition: 300ms;
+        .btn2{
+          transform: translateX(-30px);
+        }
+
+        button:hover {
+          transition: 100ms !important;
+          background-color: #ffffff;
+          font-weight: 700;
+          color: #121212;
+        }
+
+        button:not(:hover) {
+          transition: 200ms !important;
+          color: rgb(221, 221, 221);
+        }
+
+        .btn1.anima-btn{
+          transition: 600ms !important;
+          transform: translateX( 0px);
+        }
+        .btn2.anima-btn{
+          transition: 600ms !important;
+          transform: translateX( 0px);
+        }
+    
+        .btn1.not-anima-btn{
+          transition: 600ms !important;
+          transform: translateX( 30px);
+        }
+        .btn2.not-anima-btn{
+          transition: 600ms !important;
+          transform: translateX( -30px);
         }
       }
     }
-    h2{
-      padding-left: 20px;
-      font-size: 40px;
-      text-align: left;
-      color: #5b8657;
-      padding-bottom: 10px;
+    
+    
+
+
+
+
+    .left::before,
+    .left::after {
+      background-color: #ffffff;
     }
 
-    p{
-      font-size: 18px;
-      line-height: 25px;
-      color: white;
+    .left.anima-line::before {
+      width: 93%;
+      height: 1px;
+      transition: 1000ms;
     }
-  }
-  @keyframes sobre {
-    0% {
-      transform: translate(20px, 0px) perspective(1000px) rotateY(8deg);
+
+    .left.anima-line::after {
+      height: 88%;
+      width: 1px;
+      transition: 1000ms;
     }
-    25% {
-      transform: translate(0px, 20px) perspective(1000px) rotateY(8deg);
+
+    .left::before,
+    .left::after {
+      content: "";
+      position: absolute;
+      background-color: #ffffff;
+      transition: 1500ms;
     }
-    50% {
-      transform: translate(20px, 30px) perspective(1000px) rotateY(8deg);
+
+    .left::before {
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 50%;
     }
-    75% {
-      transform: translate(30px, 20px) perspective(1000px) rotateY(8deg);
+
+    .left::after {
+      left: 0;
+      bottom: 0;
+      height: 50%;
+      width: 1px;
     }
-    100% {
-      transform: translate(20px, 0px) perspective(1000px) rotateY(8deg);
+
+    .left h2::before {
+      content: "";
+      position: absolute;
+      background-color: #ffffff;
+      right: 0;
+      top: 35%;
+      height: 1px;
+      width: 0%;
+      transform: translateY(-50%);
     }
+
+    .left h2::before {
+      width: 0%;
+      transition: 1000ms;
+    }
+
+    .left.anima-line h2::before {
+      width: 60%;
+      transition: 1000ms;
+    }
+
+    .left.anima-line h2::before {
+      transition: 1000ms;
+    }
+
+
   }
 
-  .s2_bottom{
-    width: 100%;
+  h2 {
+    padding-left: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .left {
+    width: 100% !important;
+    margin-left: 0% !important;
+    margin: 0 5% !important;
+    padding: 3%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
     position: relative;
+    gap: 20px;
 
-    .shape_img {
-      position: absolute;
-      width: 100%;
-      height: 250px;
-      border-top:5px solid #161f15 ;
-      box-shadow: 3px 5px 8px black;
-      background-image: radial-gradient(circle,  rgb(26, 26, 26), rgb(14, 14, 14));
-			backdrop-filter: blur(10px);
-      z-index: 1;
-    }
-    .flex{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-    .flip-card{
-      background-color: transparent;
-      padding: 0 10px;
-      width: 270px;
-      height: 400px;
-      perspective: 1000px;
-      z-index: 2;
-    }
-    
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 1s;
-      transform-style: preserve-3d;
-      transform: rotateY(0deg);
-    }
-    
-    .flip-card:hover .flip-card-inner{
-      transform: rotateY(180deg);
-    }
-    
-    .flip-card-front, .flip-card-back{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 16px;
-      box-shadow: 2px 5px 10px black;
-    }
-    
-    .flip-card-front{
-      background-image: linear-gradient(120deg, rgb(37, 37, 37), rgb(0, 0, 0));
-      border: 3px solid #313131;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      
-      
-    }
-    
-    .flip-card-back{
-      background-image: linear-gradient(120deg,  rgb(22, 22, 22), rgb(14, 14, 14));
-      border: 3px solid #5b8657;
-      transform: rotateY(180deg);
-      transition: transform 0.6s;
-      display: flex;
-      flex-direction: column;
-
-      transition-delay: 1s;
-    }
-
-    .flip-card-back h2{
-      color: #5b8657;
-      padding: 10% 0;
-    }
-    .flip-card-back p{
-      color: white;
-    }
-
-    .front1{
-      transform: rotateY(15deg);
-    }
-    .front2{
-      transform: scale(0.95);
-    }
-    .front3{
-      transform: rotateY(-15deg);
-    }
-    h2{
-      font-size: 26px;
-    }
-    p{
-      font-size: 16px ;
-      padding: 0 20px;
-      line-height: 1.5em;
-      letter-spacing: normal;
-      
-    }
-    .bold{
-      font-size: 12px ;
-      letter-spacing: 2px;
-    }
-    .icon{
+    h2 {
       font-size: 50px;
-      color: #5b8657;
+      font-weight: 300;
+      position: relative;
+    }
+
+    p {
+      font-size: 14px !important;
     }
   }
 
+  .right {
+    display: none !important;
+  }
 }

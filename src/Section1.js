@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import img_eu from "./assets/images/eu.jpg";
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import "./Section1.scss";
@@ -83,8 +83,8 @@ function Section1() {
        
 
         <div className="buttons">
-          <button className="btn1 bg_btn" >GitHub</button>
-          <button className="btn2 bg_btn">Instagram</button>
+          <a href="https://github.com/Matheus-Berghahn" target="black"><button className="btn1 bg_btn" >GitHub</button></a>
+          <a href="https://www.instagram.com/__sunsetz__/" target="black"><button className="btn2 bg_btn">Instagram</button></a>
         </div>
       </div>
 
@@ -94,7 +94,7 @@ function Section1() {
           <span></span>
         </div>
       </div>
-      <i ref={scrollTop} onClick={scrollToTop} className='seta'><FontAwesomeIcon icon={faArrowUp} /></i>
+      <i ref={scrollTop} onClick={scrollToTop} className='seta'><FontAwesomeIcon icon={faArrowCircleUp} /></i>
     </div>
   );
 }

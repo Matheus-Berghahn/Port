@@ -33,7 +33,7 @@ function Section3() {
           <a href="https://pucrio.netlify.app/" target="_blank" rel="noopener noreferrer">
             <div className={`card pr ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
           </a>
-          <a href="https://luvasberghahn.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a href="https://sevenletters.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div className={`card sl ${isVisible ? "anima-cards" : "not-anima-cards"}`}></div>
           </a>
           <a href="https://digitalbusiness-seo.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -75,7 +75,7 @@ function Section3() {
         <div className="box">
           <iframe
             className="iframe_pr"
-            src="https://sevenletters.app/"
+            src="https://sevenletters.vercel.app/"
             style={{ display: selectedIframe === 2 ? "block" : "none" }}
           ></iframe>
           <iframe

@@ -12,7 +12,7 @@ function Section4() {
   return (
     <div id="ancor_anima" className="section4 max-width">
       <h2>Animações</h2>
-      <h3>Tenho um histórico sólido de criação de animações para grandes empresas, como Jeep, Samsung, Seara, Subway, Bradesco, Santander, Boticário, entre outras.</h3>
+      <h3>Tenho um histórico sólido de criação de animações para grandes empresas, como Jeep, Samsung, Seara, Subway, Bradesco, Santander, O Boticário, entre outras.</h3>
       <div className="all_box">
         <div className="align_box">
           <Waypoint onEnter={handleWaypointEnter}  bottomOffset="30%" />

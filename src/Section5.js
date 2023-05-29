@@ -22,14 +22,14 @@ function Section5() {
             <img src={logo} alt="Logo" />
           </div>
             <div className="contato_box">
-                <a href="matheus.berghahn3k@gmail.com" target="black"><h3>matheus.berghahn3k@gmail.com</h3></a>
-                <a href="tel:51985239065" target="black"><h3>(51) 985239065</h3></a>
+                <a href="matheus.berghahn3k@gmail.com" target="_blank"><h3>matheus.berghahn3k@gmail.com</h3></a>
+                <a href="tel:51985239065" target="_blank"><h3>(51) 985239065</h3></a>
                 <div className="contato_flex">
                   <div className="redes">
-                  <a href="https://github.com/Matheus-Berghahn" target="black"><h4>GitHub</h4></a>
-                  <a href="https://www.instagram.com/__sunsetz__/" target="black"><h4>Instagram</h4></a>
+                  <a href="https://github.com/Matheus-Berghahn" target="_blank"><h4>GitHub</h4></a>
+                  <a href="https://www.instagram.com/__sunsetz__/" target="_blank"><h4>Instagram</h4></a>
                   </div>
-                  <h3>Currículo <FontAwesomeIcon className="icon" icon={faArrowUpRightFromSquare}/></h3>
+                  <a href="https://drive.google.com/file/d/17GfkiLF_GChk-263xQ-N2FkP9DVNSUqv/view" target="_blank"><h3>Currículo <FontAwesomeIcon className="icon" icon={faArrowUpRightFromSquare}/></h3></a>
                 </div>
             </div>
         </div>

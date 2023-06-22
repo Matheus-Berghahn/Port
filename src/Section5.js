@@ -29,7 +29,7 @@ function Section5() {
                   <a href="https://github.com/Matheus-Berghahn" target="_blank"><h4>GitHub</h4></a>
                   <a href="https://www.instagram.com/__sunsetz__/" target="_blank"><h4>Instagram</h4></a>
                   </div>
-                  <a href="https://drive.google.com/file/d/17GfkiLF_GChk-263xQ-N2FkP9DVNSUqv/view" target="_blank"><h3>Currículo <FontAwesomeIcon className="icon" icon={faArrowUpRightFromSquare}/></h3></a>
+                  <a href="/matheusberghahn.pdf" target="_blank"><h3>Currículo <FontAwesomeIcon className="icon" icon={faArrowUpRightFromSquare}/></h3></a>
                 </div>
             </div>
         </div>

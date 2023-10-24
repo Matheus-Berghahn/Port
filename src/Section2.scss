@@ -44,7 +44,7 @@
         justify-content: center;
         align-items: center;
 
-        .btn1, .btn2 {
+        .btn1 {
           background-color: #121212;
           border: 1px groove #ffffff;
           width: 200px;
@@ -59,11 +59,8 @@
         }
 
         .btn1{
-          transform: translateX(30px);
+          transform: translateX(0px);
           
-        }
-        .btn2{
-          transform: translateX(-30px);
         }
 
         button:hover {
@@ -80,20 +77,12 @@
 
         .btn1.anima-btn{
           transition: 600ms !important;
-          transform: translateX( 0px);
-        }
-        .btn2.anima-btn{
-          transition: 600ms !important;
-          transform: translateX( 0px);
+          opacity: 1;
         }
     
         .btn1.not-anima-btn{
           transition: 600ms !important;
-          transform: translateX( 30px);
-        }
-        .btn2.not-anima-btn{
-          transition: 600ms !important;
-          transform: translateX( -30px);
+          opacity: 0.2;
         }
       }
     }

@@ -34,8 +34,8 @@ function Section1() {
     });
   };
 
-  const [firstName, setFirstName] = useState("Matheus");
-  const [lastName, setLastName] = useState("Berghahn");
+  const [firstName] = useState("Matheus");
+  const [lastName] = useState("Berghahn");
 
   useEffect(() => {
     const anima_nome = document.querySelector(".anima_nome");

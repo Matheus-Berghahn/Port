@@ -28,7 +28,7 @@
       position: absolute;
       background-color: #ffffff;
       right: 0;
-      top: 18%;
+      top: 14%;
       height: 1px;
       width: 0% !important;
       transform: translateY(-50%);
@@ -45,14 +45,16 @@
       position: absolute;
       background-color: #ffffff;
       left: 0;
-      top: 18%;
+      top: 14%;
       height: 1px;
       width: 0% !important;
       transform: translateY(-50%);
     }
   .all_box{
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -95,6 +97,16 @@
     }
     .pr{
       background-image: url(./assets/images/img_pr.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .ch{
+      background-image: url(./assets/images/img_ch.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .eb{
+      background-image: url(./assets/images/img_eb.jpg);
       background-size: cover;
       background-position: center;
     }
@@ -152,6 +164,11 @@
     opacity: 1;
     transition: 800ms;
   }
+  .ch.anima-cards{
+    transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
+    opacity: 1;
+    transition: 800ms;
+  }
 
 }
   
@@ -175,22 +192,23 @@
     h2::before {
       content: "";
       right: 0px !important;
-      top: 18%;
+      top: 12%;
       height: 1px;
       width: 0% !important;
     }
 
     h3::before {
       content: "";
-      top: 18%;
+      top: 12%;
       width: 0%;
       }
     }
 
     .all_box{
       width: 80%;
-      display: flex;
-      flex-wrap: wrap !important;
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(2, 1fr) !important;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -199,10 +217,9 @@
 
     }
 
-
     .card {
-      width: 120px !important;
-      height: 160px !important;
+      width: 150px !important;
+      height: 180px !important;
     }
     
     .s3_left.anima-line h2::before{

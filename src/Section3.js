@@ -5,6 +5,7 @@ import { Waypoint as ReactWaypoint } from "react-waypoint";
 import angularIcon from "./assets/images/Angular-icon.png"
 import reactIcon from "./assets/images/React-icon.png"
 import javascriptIcon from "./assets/images/Javascript-icon.png"
+import nextIcon from "./assets/images/Next-icon.png"
 
 function Section3() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,6 +36,12 @@ function Section3() {
           </a>
           <a className={`card sf ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://desafio-smartfit-nu.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img className="logo_card" src={angularIcon}></img>
+          </a>
+          <a className={`card ch ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://chess-page-lemon.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img className="logo_card" src={angularIcon}></img>
+          </a>
+          <a className={`card eb ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="#" target="_blank" rel="noopener noreferrer">
+            <img className="logo_card" src={nextIcon}></img>
           </a>
         </div>
       </div>

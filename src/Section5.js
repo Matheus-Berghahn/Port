@@ -27,7 +27,7 @@ function Section5() {
                 <div className="contato_flex">
                   <div className="redes">
                   <a href="https://github.com/Matheus-Berghahn" target="_blank"><h4>GitHub</h4></a>
-                  <a href="https://www.instagram.com/__sunsetz__/" target="_blank"><h4>Instagram</h4></a>
+                  <a href="https://www.linkedin.com/in/matheus-berghahn-098049206/" target="_blank"><h4>Linkedin</h4></a>
                   </div>
                   <a href="/matheusberghahn.pdf" target="_blank"><h3>Currículo <FontAwesomeIcon className="icon" icon={faArrowUpRightFromSquare}/></h3></a>
                 </div>

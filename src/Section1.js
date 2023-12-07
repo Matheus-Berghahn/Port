@@ -84,7 +84,7 @@ function Section1() {
 
         <div className="buttons">
           <a href="https://github.com/Matheus-Berghahn" target="_blank"><button className="btn1 bg_btn" >GitHub</button></a>
-          <a href="https://www.instagram.com/__sunsetz__/" target="_blank"><button className="btn2 bg_btn">Instagram</button></a>
+          <a href="https://www.linkedin.com/in/matheus-berghahn-098049206/" target="_blank"><button className="btn2 bg_btn">Linkedin</button></a>
         </div>
       </div>
 

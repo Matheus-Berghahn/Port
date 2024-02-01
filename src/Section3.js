@@ -26,7 +26,7 @@ function Section3() {
         <h3>Clique nos cards para acessar as páginas</h3>
         <div className="all_box">
           <a className={`card mr ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://mirage-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <img className="logo_card" src={javascriptIcon}></img>
+            <img className="logo_card" src={nextIcon}></img>
           </a>
           <a className={`card lb ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://luvasberghahn.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img className="logo_card" src={reactIcon}></img>

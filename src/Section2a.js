@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { faUserGear} from '@fortawesome/free-solid-svg-icons'
-import { Color } from 'three';
 import React, { useState } from 'react';
 
 import { Waypoint as ReactWaypoint } from 'react-waypoint';

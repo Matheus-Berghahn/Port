@@ -95,8 +95,8 @@
       background-size: cover;
       background-position: center;
     }
-    .pr{
-      background-image: url(./assets/images/img_pr.jpg);
+    .mr{
+      background-image: url(./assets/images/img_mr.gif);
       background-size: cover;
       background-position: center;
     }
@@ -159,7 +159,7 @@
     opacity: 1;
     transition: 800ms;
   }
-  .pr.anima-cards{
+  .mr.anima-cards{
     transition-timing-function:cubic-bezier(.1,.25,.42,1.22);
     opacity: 1;
     transition: 800ms;

@@ -25,7 +25,7 @@ function Section3() {
         <h2>PROJETOS</h2>
         <h3>Clique nos cards para acessar as páginas</h3>
         <div className="all_box">
-          <a className={`card pr ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://pucrio.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <a className={`card mr ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://mirage-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img className="logo_card" src={javascriptIcon}></img>
           </a>
           <a className={`card lb ${isVisible ? "anima-cards" : "not-anima-cards"}`} href="https://luvasberghahn.vercel.app/" target="_blank" rel="noopener noreferrer">

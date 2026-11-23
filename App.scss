@@ -1,0 +1,47 @@
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wire+One&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #10110e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top right, #ffffff, #535353);
+  box-shadow: 10px 10px 22px black;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Wire One', sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  backface-visibility: hidden;
+}
+h1{
+  font-size: 2.6rem;
+}
+h2{
+  font-size: 2.3rem;
+}
+p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+//Section1
+.contentMain{
+  width: 100%;
+  position: relative;
+
+}
+
+.max-width{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  overflow: hidden;
+}
